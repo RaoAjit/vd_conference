@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Template</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #03f584;
+        h1 {
+            margin-bottom: 20px;
+             color: #ff0101;
+        }
+        .button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #0630ee;
+            color: white;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 30%;
+            height: 46px;
+        }
+        .button:hover {
+            background-color: #0be203;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, {{request.user}} !</h1>
+    <button class="button"><a href="{% url 'meeting' %}">New Meeting</button>
+    <button class="button"><a href="{% url 'joinroom' %}">Join Meeting</a></button>
+    <button class="button"><a href="{% url 'logout' %}">Logout</a></button>
+</body>
+</html>
