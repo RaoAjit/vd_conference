@@ -10,6 +10,6 @@ urlpatterns = [
     path('meeting',views.runvc,name='meeting'),
     path('logout',views.mylogout,name='logout'),
     path('joinroom',views.joinroom,name='joinroom'),
-    path('try',views.tryy,name='try')
+
 
 ]
