@@ -9,6 +9,7 @@ urlpatterns = [
     path('dashboard',views.dashboard,name='dashboard'),
     path('meeting',views.runvc,name='meeting'),
     path('logout',views.mylogout,name='logout'),
-    path('joinroom',views.joinroom,name='joinroom')
+    path('joinroom',views.joinroom,name='joinroom'),
+    path('try',views.try,name='try')
 
 ]
